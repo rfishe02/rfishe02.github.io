@@ -1,51 +1,62 @@
+.txt-padding {
+    padding: 25px;
+}
+
 html {
     height: 100%;
-    width: 100%;
+    width: auto;
 }
 
 body {
-    height: 100%;
-    width: 100%;
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
 }
 
 header {
-    top: 0;
-    width: 100%;
-    background-color:rgb(220, 220, 220);
-    padding: 25px;
+    width: auto;
+    background: rgb(238,242,243);
+    background: linear-gradient(315deg, #eef2f3 0%, #8e9eab 100%);
+    overflow: visible;
+    color: #2F4F4F;
 }
 
 header h1 {
     font-size: 32pt;
+    font-weight: normal;
 }
 
 header p {
-    width: 500px;
+    max-width: 800px;
 }
 
-#project-list {
-    width: 800px;
+#project-list p {
+    max-width: 800px;
 }
 
 footer {
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    background-color:rgb(220, 220, 220);
-    padding: 25px;
+    width: auto;
+    background-color: #eef2f3;
 }
 
-footer a {
+footer h1 {
+    font-weight: normal;
+}
+
+.footer-txt {
+    font-size: 9pt;
+    color: #708090;
+}
+
+.footer-txt a {
+    color: #708090;
+}
+
+.social-icons {
     font-size: 18pt;
-    color: gray;
+    padding-right: 5px;
 }
 
 @media screen and (max-width: 576px) {
-    body p {
-        width: 250px;
-    }
     body h1 {
         font-size: 24pt;
     }
@@ -53,13 +64,22 @@ footer a {
 
 @media screen and (min-width: 992px) {
     header {
-        width: 500px;
+        position: fixed;
+        height: 100%;
+        width: 300px;
     }
     header h1 {
         font-size: 40pt;
     }
+    #project-list {
+        position: absolute;
+        left: 375px;
+        top: 0;
+    }
     footer {
-        position: static;
-        width: 500px;
+        position: fixed;
+        bottom: 0;
+        width: 300px;
+        background-color: rgba(255,255,255,0);
     }
 }
