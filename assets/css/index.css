@@ -2,6 +2,16 @@
     padding: 25px;
 }
 
+.img-border {
+    width: 650px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+img {
+    width: 100%;
+}
+
 html {
     height: 100%;
     width: auto;
@@ -29,8 +39,8 @@ header p {
     max-width: 800px;
 }
 
-#project-list p {
-    max-width: 800px;
+#project-list {
+    max-width: 75%;
 }
 
 footer {
@@ -56,6 +66,10 @@ footer {
     body h1 {
         font-size: 24pt;
     }
+    .img-border {
+        width: 325px;
+        height: 225px;
+    }
 }
 
 @media screen and (min-width: 992px) {
@@ -70,6 +84,7 @@ footer {
     #project-list {
         position: absolute;
         top: 0;
+        max-width: 50%;
         margin-left: 30%;
     }
     footer {
