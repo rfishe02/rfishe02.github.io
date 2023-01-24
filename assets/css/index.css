@@ -15,9 +15,9 @@ body {
 header {
     width: auto;
     background: rgb(238,242,243);
-    background: linear-gradient(315deg, #eef2f3 0%, #8e9eab 100%);
+    background: linear-gradient(315deg, rgba(238,242,243,1) 0%, rgba(142,158,171,1) 100%);
     overflow: visible;
-    color: #2F4F4F;
+    color: rgb(47,79,79);
 }
 
 header h1 {
@@ -35,7 +35,7 @@ header p {
 
 footer {
     width: auto;
-    background-color: #eef2f3;
+    background-color: rgb(238,242,243);
 }
 
 footer h1 {
@@ -44,11 +44,11 @@ footer h1 {
 
 .footer-txt {
     font-size: 9pt;
-    color: #708090;
+    color: rgb(112,128,144);
 }
 
 .footer-txt a {
-    color: #708090;
+    color: rgb(112,128,144);
 }
 
 .social-icons {
@@ -66,20 +66,20 @@ footer h1 {
     header {
         position: fixed;
         height: 100%;
-        width: 300px;
+        width: 25%;
     }
     header h1 {
         font-size: 40pt;
     }
     #project-list {
         position: absolute;
-        left: 375px;
         top: 0;
+        margin-left: 30%;
     }
     footer {
         position: fixed;
         bottom: 0;
-        width: 300px;
-        background-color: rgba(255,255,255,0);
+        width: 25%;
+        background-color: rgba(238,242,243,0);
     }
 }
