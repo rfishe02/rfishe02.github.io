@@ -12,7 +12,7 @@
   <body>
 
 	<div id="preview-modal" class="modal">
-		<div class="close-icon"><i class="bi bi-x-lg"></i></div>
+		<div class="close-icon-border"><i id="close-icon" class="bi bi-x-lg"></i></div>
 		<div id="modal-content"></div>
 	</div>
 
@@ -30,18 +30,22 @@
 	<div id="project-list" class="txt-padding">
 		
 		<div>
-			<h2>Fort Smash Twitch Stream Overlay</h2>
-			<p>
-				This project is an overlay for the Fort Smash Twitch stream. It was built using an Express JavaScript web server and a MariaDB database to store website data. 
-				To get tournament updates from their tournament management website, the Start.gg GraphQL API was used. Lastly, Vue.js was used for the overlay.
-			</p>
-
-			<div class="img-border">
-				<div class="magnify-icon"><i class="bi bi-zoom-in magnify-icon"></i></div>
-				<img class="expandable-img" src="images/fulls/striker_edit.png" alt="A banner with a red and blue color scheme that shows the team names, event information, and the stages selected by the players.">
-				<p class="txt-caption">
-					The overlay design shown in Open Broadcaster Software (OBS).
+			
+			<div>
+				<h2>Fort Smash Twitch Stream Overlay</h2>
+				<p>
+					This project is an overlay for the Fort Smash Twitch stream. 
+					It was built using an Express JavaScript web server and a MariaDB database to store website data. 
+					To get tournament updates from their tournament management website, the Start.gg GraphQL API was used. 
+					Lastly, Vue.js was used for the overlay.
 				</p>
+				<div class="img-border">
+					<div class="magnify-icon-border"><i class="bi bi-zoom-in magnify-icon"></i></div>
+					<img class="expandable-img" src="images/fulls/striker_edit.png" alt="A banner with a red and blue color scheme that shows the team names, event information, and the stages selected by the players.">
+					<p class="txt-caption">
+						The overlay design shown in Open Broadcaster Software (OBS).
+					</p>
+				</div>
 			</div>
 
 			<!--
@@ -71,6 +75,7 @@
 
 		var modal = document.getElementById("preview-modal");
 		var modalContent = document.getElementById("modal-content");
+		var closeButton = document.getElementById("close-icon");
 		const minPreviewWindowWidth = 576;
 
 		window.onload = function() {	
@@ -95,12 +100,16 @@
 
 		};
 
+		closeButton.onclick = function(event) {
+			modal.style.display = "none";
+		}
+
 		window.onclick = function(event) {
   			if (event.target == modal) {
     			modal.style.display = "none";
   			}
 		}
-		
+
 		</script>
 
   </body>
