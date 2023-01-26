@@ -54,9 +54,10 @@
 					</p>
 				</div>
 
-				<div style="margin: 0 auto; text-align:center; padding-bottom: 5px;">
-					<video width="426" height="240" style="border-radius: 10px 10px 10px 10px;" autoplay loop muted>
+				<div class="video-border">
+					<video autoplay loop muted>
 						<source src="videos/FortSmith_Overlay_Clip.mp4" type="video/mp4">
+						Your browser does not support the video tag.
 					</video>
 					<p class="txt-caption">A clip from <a href="https://www.twitch.tv/videos/1594126603">Back to Smash 2022 Week 3: Winners Final - LumaDooma vs. OSWALD</a>.</p>
 				</div>
@@ -94,6 +95,7 @@
 						modalContent.innerHTML = '';
 						modalContent.appendChild(previewImage);
 						modal.style.display = "block";
+						modal.scrollTop = 0;
 					}
 
 				});

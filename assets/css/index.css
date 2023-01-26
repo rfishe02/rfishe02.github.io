@@ -11,7 +11,7 @@
 .img-border {
     position: relative;
     text-align: center;
-    padding-bottom: 5px;
+    margin-bottom: 5px;
 }
 
 .magnify-icon-border {
@@ -35,6 +35,18 @@ img {
 .expandable-img:hover {
     opacity: 0.7;
     cursor: zoom-in;
+}
+
+.video-border {
+    margin: 0 auto; 
+    text-align:center; 
+    margin-bottom: 5px;
+}
+
+video {
+    border-radius: 10px 10px 10px 10px;
+    width: 426px;
+    height: 240px;
 }
 
 html {
@@ -62,6 +74,7 @@ body {
 }
 
 #modal-content {
+    width: 90%;
     margin: 15% auto;
     text-align: center;
     animation-name: fade;
@@ -110,10 +123,11 @@ header p {
 
 #project-list {
     max-width: 75%;
-    height: 100%;
+    margin-bottom: 15px;
 }
 
 footer {
+    position: static;
     width: auto;
     background-color: rgb(238,242,243);
 }
@@ -138,10 +152,13 @@ footer {
     }
     .img-border {
         width: 325px;
-        height: 225px;
     }
     .magnify-icon-border {
         display: none;
+    }
+    video {
+        width: 326px;
+        height: 140px;
     }
 }
 
