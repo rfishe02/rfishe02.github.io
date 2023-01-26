@@ -8,7 +8,23 @@
     font-style: italic;
 }
 
-.img-border {
+.link-button-border {
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.link-button {
+    padding: 7px;
+    background-color: rgb(238,242,243);
+    border-radius: 10px 10px 10px 10px;
+}
+
+.link-button a {
+    color: black;
+    text-decoration: none;
+}
+
+.img-group {
     position: relative;
     text-align: center;
     margin-bottom: 5px;
@@ -37,7 +53,7 @@ img {
     cursor: zoom-in;
 }
 
-.video-border {
+.video-group {
     margin: 0 auto; 
     text-align:center; 
     margin-bottom: 5px;
@@ -150,7 +166,7 @@ footer {
     body h1 {
         font-size: 24pt;
     }
-    .img-border {
+    .img-group {
         width: 325px;
     }
     .magnify-icon-border {

@@ -12,7 +12,7 @@
   <body>
 
 	<div id="preview-modal" class="modal">
-		<div class="close-icon-border"><i id="close-icon" class="bi bi-x-lg"></i></div>
+		<span class="close-icon-border"><i id="close-icon" class="bi bi-x-lg"></i></span>
 		<div id="modal-content"></div>
 	</div>
 
@@ -29,41 +29,47 @@
 
 	<div id="project-list" class="txt-padding">
 		
-		<div>
-			
-			<div>
-				<h2>Fort Smash Twitch Stream Overlay</h2>
-				<p>
-					This project is an overlay for the Fort Smash Twitch stream. 
-					It was built using an Express JavaScript web server and a MariaDB database to store website data. 
-					To get tournament updates from their tournament management website, the Start.gg GraphQL API was used. 
-					Lastly, Vue.js was used for the overlay.
-				</p>
-				<div class="img-border">
-					<div class="magnify-icon-border"><i class="bi bi-zoom-in magnify-icon"></i></div>
-					<img class="expandable-img" src="images/fulls/striker_edit.png" alt="A banner with a red and blue color scheme that shows the team names, event information, and the stages selected by the players.">
-					<p class="txt-caption">
-						The overlay design shown in Open Broadcaster Software (OBS).
-					</p>
-				</div>
-				<div class="img-border">
-					<div class="magnify-icon-border"><i class="bi bi-zoom-in magnify-icon"></i></div>
-					<img class="expandable-img" src="images/fulls/striker_app_screenshot_jan_2023.png" alt="...">
-					<p class="txt-caption">
-						The interface of the application players use to monitor stage strikes shown on an iPad.
-					</p>
-				</div>
+		<div class="project-list-item">
 
-				<div class="video-border">
-					<video autoplay loop muted>
-						<source src="videos/FortSmith_Overlay_Clip.mp4" type="video/mp4">
-						Your browser does not support the video tag.
-					</video>
-					<p class="txt-caption">A clip from <a href="https://www.twitch.tv/videos/1594126603">Back to Smash 2022 Week 3: Winners Final - LumaDooma vs. OSWALD</a>.</p>
-				</div>
+			<h2>Fort Smash Twitch Stream Overlay</h2>
 
+			<div class="link-button-border">
+				<span class="link-button">
+					<a href="https://github.com/rfishe02/uasmash_overlay_next"><i class="bi bi-github"></i> Github Repository</a>
+				</span>
 			</div>
-			
+
+			<p>
+				This project is an overlay for the Fort Smash Twitch stream. 
+				It was built using an Express JavaScript web server and a MariaDB database to store website data. 
+				To get tournament updates from their tournament management website, the Start.gg GraphQL API was used. 
+				Lastly, Vue.js was used for the overlay.
+			</p>
+
+			<div class="img-group">
+				<span class="magnify-icon-border"><i class="bi bi-zoom-in magnify-icon"></i></span>
+				<img class="expandable-img" src="images/fulls/striker_edit.png" alt="A banner with a red and blue color scheme that shows the team names, event information, and the stages selected by the players.">
+				<p class="txt-caption">
+					The overlay design shown in Open Broadcaster Software (OBS).
+				</p>
+			</div>
+
+			<div class="img-group">
+				<span class="magnify-icon-border"><i class="bi bi-zoom-in magnify-icon"></i></span>
+				<img class="expandable-img" src="images/fulls/striker_app_screenshot_jan_2023.png" alt="...">
+				<p class="txt-caption">
+					The interface of the application players use to monitor stage strikes shown on an iPad.
+				</p>
+			</div>
+
+			<div class="video-group">
+				<video autoplay loop muted>
+					<source src="videos/FortSmith_Overlay_Clip.mp4" type="video/mp4">
+					Your browser does not support the video tag.
+				</video>
+				<p class="txt-caption">A clip from <a href="https://www.twitch.tv/videos/1594126603">Back to Smash 2022 Week 3: Winners Final - LumaDooma vs. OSWALD</a>.</p>
+			</div>
+
 		</div>
 		
 	</div>
